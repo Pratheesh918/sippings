@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <link rel="stylesheet" href="style.css">
+   
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+   <div class="section">
+    <div> <h1 class="one">Shopping🛍️</h1></div>
+    <div class="home" onclick="home()">Home</div>
+    <div class="shop" onclick="shop()">Shop</div>
+    <div class="blog" onclick="blog()">Blog</div>
+    <div class="about">About</div>
+    <div class="contact">Contact</div>
+    <div class="bag"><i class="fa-solid fa-bag-shopping"></i></div>
+    <div class="menu" onclick="worked()"><i class="fa-solid fa-bars"></i></div>
+    
+   </div> 
+   <div class="sidenavbar">
+    <p id="multiply" onclick="closed()">X</p>
+    <p id="samenavber" onclick="home()">Home</p>
+    
+    <p id="samenavber" onclick="shop()">Shop</p>
+    
+    <p id="samenavber" onclick="blog()">Blog</p>
+    
+    <p id="samenavber">About</p>
+    
+    <p id="samenavber">Contact</p>
+    
+    <p id="samenavberbag"><i class="fa-solid fa-bag-shopping"></i></p>
+   </div>
+   <br>
+   <br>
+   <br>
+   <div class="booked1">
+    <div class="b44">
+        <h1 class="re">#readmore</h1>
+        <h4 class="st">Read all case studies about our products !</h4>
+    </div>
+   </div>
+   <br>
+   <br>
+   <div class="section10">
+    <div>
+        <img src="blog1.jpeg" class="isame">
+    </div>
+    <div>
+        <h2><b>The Cotton-jersey Zip-Up-Hoodie</b></h2>
+        <p class="psame">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, similique. Sit incidunt, praesentium nemo, architecto totam autem aliquid porro fugiat iusto temporibus dolorum ipsam. Ad illum fugit odio cupiditate autem.</p>
+        <b>Contine reading ____</b>
+    </div>
+   </div>
+   <br>
+   <br>
+   <div class="section20">
+    <div>
+        <img src="blog2.jpeg" class="isame">
+    </div>
+    <div>
+        <h2><b>How to style a quiff</b></h2>
+        <p class="psame">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, similique. Sit incidunt, praesentium nemo, architecto totam autem aliquid porro fugiat iusto temporibus dolorum ipsam. Ad illum fugit odio cupiditate autem.</p>
+        <b>Continue reading ____</b>
+    </div>
+   </div>
+   <br>
+   <br>
+   <div class="section30">
+    <div>
+        <img src="blog3.jpeg" class="isame">
+    </div>
+    <div>
+        <h2><b>Runway-Inspired Trends</b></h2>
+        <p class="psame">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, similique. Sit incidunt, praesentium nemo, architecto totam autem aliquid porro fugiat iusto temporibus dolorum ipsam. Ad illum fugit odio cupiditate autem.</p>
+        <b>Continue reading ____</b>
+    </div>
+   </div>
+   <br>
+   <br>
+   <div class="section40">
+    <div>
+        <img src="blog4.jpeg" class="isame">
+    </div>
+    <div>
+        <h2><b>AW20 Menswear Treands</b></h2>
+        <p class="psame">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, similique. Sit incidunt, praesentium nemo, architecto totam autem aliquid porro fugiat iusto temporibus dolorum ipsam. Ad illum fugit odio cupiditate autem.</p>
+        <b>Continue reading ____</b>
+    </div>
+   </div>
+   <script>
+    var a=document.querySelector(".sidenavbar")
+    function worked(){
+        a.style.left="0"
+    }
+    function closed(){
+        a.style.left="-80%"
+    }
+   var c=document.getElementById("a8")
+    function signed(){
+       var doc=c.value
+        if(doc==String(doc)){
+            alert("Submitted")
+        }
+        else{
+            alert("Invalid")
+        }
+    }
+    function home(){
+        window.location.assign("index.html")
+    }
+    function shop(){
+        window.location.assign("shop.html")
+    }
+    function blog(){
+        window.location.assign("blog.html")
+    }
+
+   </script>
+   
+</body>
+
+</html>

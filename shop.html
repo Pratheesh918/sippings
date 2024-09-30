@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <link rel="stylesheet" href="style.css">
+   
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+   <div class="section">
+    <div> <h1 class="one">Shopping🛍️</h1></div>
+    <div class="home" onclick="home()">Home</div>
+    <div class="shop" onclick="shop()">Shop</div>
+    <div class="blog" onclick="blog()">Blog</div>
+    <div class="about">About</div>
+    <div class="contact">Contact</div>
+    <div class="bag"><i class="fa-solid fa-bag-shopping"></i></div>
+    <div class="menu" onclick="worked()"><i class="fa-solid fa-bars"></i></div>
+    
+   </div> 
+   <div class="sidenavbar">
+    <p id="multiply" onclick="closed()">X</p>
+    <p id="samenavber" onclick="home()">Home</p>
+    
+    <p id="samenavber" onclick="shop()">Shop</p>
+    
+    <p id="samenavber" onclick="blog()">Blog</p>
+    
+    <p id="samenavber">About</p>
+    
+    <p id="samenavber">Contact</p>
+    
+    <p id="samenavberbag"><i class="fa-solid fa-bag-shopping"></i></p>
+   </div>
+   <br>
+   <br>
+   <br>
+   
+   
+   
+   <div class="located">
+    <div class="ttshirt">
+        <h1 class="v1">#Stay Home</h1>
+        <h4 class="v2">Save more with coupons $ up to 70% off !</h4>
+    </div>
+
+   </div>
+   <br>
+   <br>
+   <br>
+
+<div class="addition">
+    <div>
+    <img src="shop1.webp" class="bluecolor" id="circle"><br>
+    <img src="shop2.webp" class="bluecolors">
+    <img src="dress1.webp" class="bluecolors">
+    <img src="dress2.webp" class="bluecolors">
+    <img src="dress3.webp" class="bluecolors">
+    </div>
+    <div class="stopped">
+        <p>Home/Shirt</p>
+        <h3>Men's Fashion Shirt</h3>
+        <h1>$139.00</h1>
+        <select><option>Select Size</option>
+            <option>XL</option>
+            <option>Double XL</option>
+            <option>M</option>
+            <option>ML</option>
+        </select>
+        <h3 class="dived" onclick="level()">Add To Cart</h3>
+        <h3>Product Details</h3>
+        <p class="gildan">Shopping can be a fun experience, whether you're browsing for clothes, electronics, or groceries. Online platforms and retail stores offer a wide variety of products to meet diverse customer needs.</p>
+    </div>
+</div>
+<br>
+<br>
+</div><h1 class="featured" id="wrongone">Featured Products</h1>
+<p class="summer" id="wrongtwo">Summer Collection New Morden Design</p>
+</center>
+<br>
+<div class="redshirt">
+ <div class="redshirts"><img src="dress1.webp" class="redsame">
+ <p class="add">adidas</p>
+ <h3 class="cartoon">Cartoon Astronaut T-Shirts</h3>
+ <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+ <h3 class="number">$78</h3>
+ </div>
+ <div class="redshirts"><img src="dress2.webp" class="redsame">
+ <p class="add">adidas</p>
+ <h3 class="cartoon">Cartoon Astronaut T-Shirts</h3>
+ <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+ <h3 class="number">$78</h3>
+ </div>
+ <div class="redshirts"><img src="dress3.webp" class="redsame">
+ <p class="add">adidas</p>
+ <h3 class="cartoon">Cartoon Astronaut T-Shirts</h3>
+ <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+ <h3 class="number">$78</h3>
+ </div>
+ <div class="redshirts"><img src="dress4.webp" class="redsame">
+ <p class="add">adidas</p>
+ <h3 class="cartoon">Cartoon Astronaut T-Shirts</h3>
+ <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+    <h3 class="number">$78</h3>
+   </div>
+   </div>
+
+
+   <script>
+    var a=document.querySelector(".sidenavbar")
+    function worked(){
+        a.style.left="0"
+    }
+    function closed(){
+        a.style.left="-80%"
+    }
+   var c=document.getElementById("a8")
+    function signed(){
+       var doc=c.value
+        if(doc==String(doc)){
+            alert("Submitted")
+        }
+        else{
+            alert("Invalid")
+        }
+    }
+    function home(){
+        window.location.assign("index.html")
+    }
+    function shop(){
+        window.location.assign("shop.html")
+    }
+    function blog(){
+        window.location.assign("blog.html")
+    }
+    var Bigimage=document.getElementById("circle")
+    var smallimage=document.getElementsByClassName("bluecolors")
+    smallimage[0].onclick=function(){
+            Bigimage.src=smallimage[0].src
+    }
+    smallimage[1].onclick=function(){
+            Bigimage.src=smallimage[1].src
+    }
+    smallimage[2].onclick=function(){
+            Bigimage.src=smallimage[2].src
+    }
+    smallimage[3].onclick=function(){
+            Bigimage.src=smallimage[3].src
+    }
+    function level(){
+        alert("Ordered Successfully")
+    }
+
+   </script>
+   </body>
+   </html>
